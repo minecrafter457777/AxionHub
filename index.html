@@ -257,6 +257,16 @@
             color: #ff4b2b;
         }
 
+        .platform-title {
+            text-align: center;
+            font-size: 24px;
+            color: #888;
+            margin-top: -30px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -294,13 +304,19 @@
             font-size: 14px;
         }
 
-        /* --- СПИСОК ПРОГРАМ --- */
-        .programs-list {
-            padding: 80px 10%;
+        /* --- СПИСКИ ПРОГРАМ (Windows та Linux) --- */
+        .programs-list, 
+        .programs-list2 {
+            padding: 60px 10%;
             background-color: #0d0d0d;
         }
 
-        .program-tags {
+        .programs-list2 {
+            padding-top: 0; /* Прибираємо зайвий відступ між списками */
+        }
+
+        .program-tags, 
+        .program-tags2 {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -405,7 +421,7 @@
 
     <section class="programs-list" id="about">
         <h2 class="section-title">Підтримувані <span>Програми</span></h2>
-                <h2 class="section-title"> Windows </h2>
+        <h3 class="platform-title">🪟 Windows</h3>
         <div class="program-tags">
             <div class="tag">📦 7-Zip</div>
             <div class="tag">🌐 Google Chrome</div>
@@ -414,13 +430,18 @@
             <div class="tag">📄 LibreOffice</div>
             <div class="tag">🎮 Heroic Games Launcher</div>
             <div class="tag">🎮 Steam</div>
-            <div class="tag">🎮TLauncher</div>
+            <div class="tag">⛏️ TLauncher</div>
             <div class="tag">🕹️ Game Jolt</div>
             <div class="tag">📚 WinRAR</div>
             <div class="tag">💬 Discord</div>
             <div class="tag">☕ ORACLE | Java JDK 26</div>
             <div class="tag">✈️ Telegram Desktop</div>
-            <h2 class="section-title">Linux</h2>
+        </div>
+    </section>
+
+    <section class="programs-list2">
+        <h3 class="platform-title">🐧 Linux</h3>
+        <div class="program-tags2">
             <div class="tag">🌐 Google Chrome (.deb)</div>
             <div class="tag">🎮 Steam (.deb)</div>
             <div class="tag">🦸 Heroic Games Launcher (AppImage)</div>
